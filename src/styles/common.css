@@ -1,0 +1,22 @@
+/* src/styles/common.css */
+
+/* Button Styles */
+.btn {
+    @apply px-4 py-2 rounded-md font-bold text-white transition-colors duration-300;
+}
+
+.btn-primary {
+    @apply bg-primary hover:bg-primary-dark;
+}
+
+.btn-secondary {
+    @apply bg-secondary;
+}
+/* .btn-blue {
+    @apply bg-blue;
+} */
+
+/* Container Setup for Responsive Layouts */
+.container {
+    @apply mx-auto px-4;
+}
