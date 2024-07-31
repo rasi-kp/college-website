@@ -7,9 +7,10 @@ import Navbar from './components/navbar';
 
 function App() {
   return (
-    
+
     <div className="container-fluid h-screen bg-yellow-400 mx-auto p-8 text-center">
-      <Navbar/>
+      <h1>hai</h1>
+      <Navbar />
       <div className="flex justify-center items-center space-x-10">
         <a href="https://vitejs.dev" target="_blank" rel="noopener noreferrer">
           <img src={viteLogo} className="h-32 p-1 transition-filter duration-300  hover:drop-shadow-lg" alt="Vite logo" />
@@ -25,13 +26,13 @@ function App() {
           <button className="btn btn-primary mr-3">Primary Button</button>
           <button className="btn btn-secondary">Secondary Button</button>
           <div className='m-5'>
-          <button className=" btn btn-primary mr-3">click me</button>
-          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-            Button
-          </button>
-          <button className="btn btn-blue">
-            Button
-          </button>
+            <button className=" btn btn-primary mr-3">click me</button>
+            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+              Button
+            </button>
+            <button className="btn btn-blue">
+              Button
+            </button>
           </div>
 
           <p>
