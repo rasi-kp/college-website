@@ -1,3 +1,15 @@
+// /** @type {import('tailwindcss').Config} */
+// export default {
+//   content: [
+//     "./index.html",
+//     "./src/**/*.{js,ts,jsx,tsx}",
+//   ],
+//   theme: {
+//     extend: {},
+//   },
+//   plugins: [],
+// }
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -5,8 +17,31 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        sm: '640px',
+        md: '768px',
+        lg: '1024px',
+        xl: '1280px',
+        '2xl': '1536px',
+      },
+      colors: {
+        primary: '#1E3A8A', // Example primary color
+        'primary-dark': '#172B4D', // Custom dark primary color
+        secondary: '#F43F5E', // Example secondary color
+        accent: '#7C3AED', // Example accent color
+        muted: '#6B7280', // Example muted color
+        // blue:'blue'
+      },
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'], // Example custom font family
+        serif: ['Merriweather', 'serif'],
+      },
+      spacing: {
+        '128': '32rem', // Custom spacing
+        '144': '36rem',
+      },
+    },
   },
   plugins: [],
 }
-
