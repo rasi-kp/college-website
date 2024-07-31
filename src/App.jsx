@@ -8,7 +8,7 @@ import Navbar from './components/navbar';
 function App() {
   return (
     
-    <div className="container-fluid h-screen bg-yellow-400 mx-auto p-8 text-center">
+    <div className="container-fluid h-screen bg-yellow-400 mx-auto  text-center">
       <Navbar/>
       <div className="flex justify-center items-center space-x-10">
         <a href="https://vitejs.dev" target="_blank" rel="noopener noreferrer">
