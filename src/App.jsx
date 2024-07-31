@@ -9,7 +9,7 @@ function App() {
   return (
 
     <div className="container-fluid h-screen bg-yellow-400 mx-auto p-8 text-center">
-      <h1>hai</h1>
+      <h1>hello</h1>
       <Navbar />
       <div className="flex justify-center items-center space-x-10">
         <a href="https://vitejs.dev" target="_blank" rel="noopener noreferrer">
