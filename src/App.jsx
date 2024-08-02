@@ -9,7 +9,6 @@ function App() {
   return (
 
     <div className="container-fluid h-screen bg-yellow-400 mx-auto p-8 text-center">
-      <h1>hello</h1>
       <Navbar />
       <div className="flex justify-center items-center space-x-10">
         <a href="https://vitejs.dev" target="_blank" rel="noopener noreferrer">
@@ -18,7 +17,7 @@ function App() {
         <a href="https://react.dev" target="_blank" rel="noopener noreferrer">
           <img src={reactLogo} className="h-32 p-1 transition-filter duration-300 hover:drop-shadow-lg" alt="React logo" />
         </a>
-        <h1> hello</h1>
+
       </div>
       <h1 className="font-bold text-4xl mt-8">Vite + React</h1>
       <h1 className=" font-bold underline">Hello world!</h1>
