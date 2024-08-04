@@ -7,7 +7,6 @@ function Navbar() {
     const [isMegaAbout, setisMegaAbout] = useState(false)
     const [isMegaAcc, setisMegaAcc] = useState(false)
 
-
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
@@ -117,6 +116,15 @@ function Navbar() {
                                 </div>
                             </div>
                         </li>
+                        <button
+                                onClick={e=>setisMegaDep(!isMegaDep)}
+                                className="flex items-center justify-center w-full py-2 px-3 font-medium text-gray-900 border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
+                            >
+                                Department
+                                <svg className="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
+                                </svg>
+                            </button>
                         <li>
                             <button
                                 onMouseEnter={() => setisMegaAcc(true)}
@@ -128,10 +136,6 @@ function Navbar() {
                                     <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
                                 </svg>
                             </button>
-
-
-
-
 
                             <div className={`md:absolute z-10 grid grid-cols-2 text-sm bg-white border border-gray-100 rounded-lg shadow-md dark:border-gray-700 dark:bg-gray-700 ${isMegaAcc ? 'block' : 'hidden'}`}>
                                 <div className="p-4 pb-0 text-gray-900 md:pb-4 dark:text-white">
@@ -196,6 +200,7 @@ function Navbar() {
                                     <ul className="space-y-4">
                                         <li>
                                             <a href="#" className="flex items-center justify-start text-center text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500 group">
+
                                                 <span className="sr-only">About us</span>
                                                 <svg className="w-3 h-3 me-2 text-gray-400 dark:text-gray-500 group-hover:text-blue-600 dark:group-hover:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                                                     <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z" />

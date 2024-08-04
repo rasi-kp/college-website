@@ -7,7 +7,6 @@ import Navbar from './components/navbar';
 
 function App() {
   return (
-
     <div className="container-fluid h-screen bg-yellow-400 mx-auto  text-center">
       <Navbar />
       <div className="flex justify-center items-center space-x-10">
