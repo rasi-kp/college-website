@@ -2,12 +2,11 @@ import React from 'react';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './index.css'
-import Navbar from './components/navbar';
+import Navbar from './components/Navbar';
 
 
 function App() {
   return (
-
     <div className="container-fluid h-screen bg-yellow-400 mx-auto  text-center">
       <Navbar />
       <div className="flex justify-center items-center space-x-10">
