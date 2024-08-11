@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
-    const [isMegaDep, setisMegaDep] = useState(false)
+    const [isMegaDep, setisMegaDepartmen] = useState(false)
     const [isMegaAbout, setisMegaAbout] = useState(false)
     const [isMegaAcc, setisMegaAcc] = useState(false)
     const [isMegaAdmission, setisMegaAdmission] = useState(false)
@@ -109,8 +109,8 @@ function Navbar() {
                         </li>
                         <li>
                             <button
-                                onMouseEnter={() => setisMegaDep(true)}
-                                onMouseLeave={() => setisMegaDep(false)}
+                                onMouseEnter={() => setisMegaDepartment(true)}
+                                onMouseLeave={() => setisMegaDepartment(false)}
                                 className="flex items-center justify-center w-full py-2 px-3 font-medium text-gray-900 border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
                             >
                                 Department
@@ -120,7 +120,7 @@ function Navbar() {
                             </button>
 
 
-                            <div className={`md:absolute z-10 grid w-auto  text-sm bg-white border border-gray-100 rounded-lg shadow-md dark:border-gray-700 dark:bg-gray-700 ${isMegaDep ? 'block' : 'hidden'}`}>
+                            <div className={`md:absolute z-10 grid w-auto  text-sm bg-white border border-gray-100 rounded-lg shadow-md dark:border-gray-700 dark:bg-gray-700 ${isMegaDepartment ? 'block' : 'hidden'}`}>
                                 <div className="p-4 pb-0 text-gray-900 md:pb-4  dark:text-white">
                                     <ul className="space-y-4">
                                         <li>
@@ -159,8 +159,8 @@ function Navbar() {
                         </li>
                         <li>
                             <button
-                                onMouseEnter={() => setisMegaAcc(true)}
-                                onMouseLeave={() => setisMegaAcc(false)}
+                                onMouseEnter={() => setisMegaAccriditation(true)}
+                                onMouseLeave={() => setisMegaAccriditation(false)}
                                 className="text-1xl flex items-center justify-center w-full py-2 px-3 font-medium text-gray-900 border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
                             >
                                 Accriditation
@@ -168,7 +168,7 @@ function Navbar() {
                                     <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
                                 </svg>
                             </button>
-                            <div className={`md:absolute z-10 grid  text-sm bg-white border border-gray-100 rounded-lg shadow-md dark:border-gray-700 dark:bg-gray-700 ${isMegaAcc ? 'block' : 'hidden'}`}>
+                            <div className={`md:absolute z-10 grid  text-sm bg-white border border-gray-100 rounded-lg shadow-md dark:border-gray-700 dark:bg-gray-700 ${isMegaAccriditation ? 'block' : 'hidden'}`}>
                                 <div className="p-4 pb-0 text-gray-900 md:pb-4 dark:text-white">
                                     <ul className="space-y-4">
                                         <li>
