@@ -3,9 +3,9 @@ import React, { useState } from 'react';
 function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
-    const [isMegaDep, setisMegaDepartmen] = useState(false)
+    const [isMegaDepartMent, setisMegaDepartment] = useState(false)
     const [isMegaAbout, setisMegaAbout] = useState(false)
-    const [isMegaAcc, setisMegaAcc] = useState(false)
+    const [isMegaAccriditation, setisMegaAccriditation] = useState(false)
     const [isMegaAdmission, setisMegaAdmission] = useState(false)
     const [isMegaFacility, setisMegaFacility] = useState(false)
     const [isMegaActivities, setisMegaActivities] = useState(false)
@@ -24,11 +24,11 @@ function Navbar() {
                     <img src="https://flowbite.com/docs/images/logo.svg" className="h-8" alt="Flowbite Logo" />
                     <span className="self-center text-1xl font-semibold whitespace-nowrap dark:text-white">STM</span>
                 </a>
-                <div className="flex items-center md:order-2 space-x-1 md:space-x-2 ">
+                <div className="flex items-center lg:order-2 space-x-1 lg:space-x-2 ">
                     <button
                         onClick={toggleMenu}
                         type="button"
-                        className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                        className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                         aria-controls="mobile-menu"
                     >
                         <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
@@ -36,13 +36,13 @@ function Navbar() {
                         </svg>
                     </button>
                 </div>
-                <div className={`md:flex md:w-auto md:order-1 ${isMenuOpen ? 'block w-full' : 'hidden'}`} >
-                    <ul className="flex flex-col mt-4 font-medium md:flex-row md:mt-0 md:space-x-10 rtl:space-x-reverse ">
+                <div className={`lg:flex lg:w-auto lg:order-1 ${isMenuOpen ? 'block w-full' : 'hidden'}`} >
+                    <ul className="flex flex-col mt-4 font-medium lg:flex-row md:mt-0 lg:space-x-10 rtl:space-x-reverse ">
                         <li>
                             <button
                                 onMouseEnter={() => setisMegaAbout(true)}
                                 onMouseLeave={() => setisMegaAbout(false)}
-                                className="text-1xl flex items-center justify-center w-full py-2 px-3 font-medium text-gray-900 border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
+                                className="text-1xl flex items-center justify-center w-full py-2 px-3 font-medium text-gray-900 border-b border-gray-100 lg:w-auto hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-600 lg:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 lg:dark:hover:bg-transparent dark:border-gray-700"
                             >
                                 About
                                 <svg className="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
@@ -111,7 +111,7 @@ function Navbar() {
                             <button
                                 onMouseEnter={() => setisMegaDepartment(true)}
                                 onMouseLeave={() => setisMegaDepartment(false)}
-                                className="flex items-center justify-center w-full py-2 px-3 font-medium text-gray-900 border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
+                                className="flex items-center justify-center w-full py-2 px-3 font-medium text-gray-900 border-b border-gray-100 lg:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 lg:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
                             >
                                 Department
                                 <svg className="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
@@ -120,7 +120,7 @@ function Navbar() {
                             </button>
 
 
-                            <div className={`md:absolute z-10 grid w-auto  text-sm bg-white border border-gray-100 rounded-lg shadow-md dark:border-gray-700 dark:bg-gray-700 ${isMegaDepartment ? 'block' : 'hidden'}`}>
+                            <div className={`md:absolute z-10 grid w-auto  text-sm bg-white border border-gray-100 rounded-lg shadow-md dark:border-gray-700 dark:bg-gray-700 ${isMegaDepartMent ? 'block' : 'hidden'}`}>
                                 <div className="p-4 pb-0 text-gray-900 md:pb-4  dark:text-white">
                                     <ul className="space-y-4">
                                         <li>
@@ -161,7 +161,7 @@ function Navbar() {
                             <button
                                 onMouseEnter={() => setisMegaAccriditation(true)}
                                 onMouseLeave={() => setisMegaAccriditation(false)}
-                                className="text-1xl flex items-center justify-center w-full py-2 px-3 font-medium text-gray-900 border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
+                                className="text-1xl flex items-center justify-center w-full py-2 px-3 font-medium text-gray-900 border-b border-gray-100 lg:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 lg:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
                             >
                                 Accriditation
                                 <svg className="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
@@ -195,7 +195,7 @@ function Navbar() {
                             <button
                                 onMouseEnter={() => setisMegaAdmission(true)}
                                 onMouseLeave={() => setisMegaAdmission(false)}
-                                className="text-1xl flex items-center justify-center w-full py-2 px-3 font-medium text-gray-900 border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
+                                className="text-1xl flex items-center justify-center w-full py-2 px-3 font-medium text-gray-900 border-b border-gray-100 lg:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 lg:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
                             >
                                 Admission
                                 <svg className="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
@@ -228,7 +228,7 @@ function Navbar() {
                             <button
                                 onMouseEnter={() => setisMegaActivities(true)}
                                 onMouseLeave={() => setisMegaActivities(false)}
-                                className="text-1xl flex items-center justify-center w-full py-2 px-3 font-medium text-gray-900 border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
+                                className="text-1xl flex items-center justify-center w-full py-2 px-3 font-medium text-gray-900 border-b border-gray-100 lg:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 lg:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
                             >
                                 Activities
                                 <svg className="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
@@ -261,7 +261,7 @@ function Navbar() {
                             <button
                                 onMouseEnter={() => setisMegaFacility(true)}
                                 onMouseLeave={() => setisMegaFacility(false)}
-                                className="flex items-center justify-center w-full py-2 px-3 font-medium text-gray-900 border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
+                                className="flex items-center justify-center w-full py-2 px-3 font-medium text-gray-900 border-b border-gray-100 lg:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 lg:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
                             >
                                 Facility
                                 <svg className="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
@@ -309,13 +309,13 @@ function Navbar() {
                         </li>
 
                         <li>
-                            <a href="#" className="text-1xl block py-2 px-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Placement</a>
+                            <a href="#" className="text-1xl block py-2 px-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 lg:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Placement</a>
                         </li>
                         <li>
                             <button
                                 onMouseEnter={() => setisMegaMore(true)}
                                 onMouseLeave={() => setisMegaMore(false)}
-                                className="flex items-center justify-center w-full py-2 px-3 font-medium text-gray-900 border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
+                                className="flex items-center justify-center w-full py-2 px-3 font-medium text-gray-900 border-b border-gray-100 lg:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 lg:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
                             >
                                 More
                                 <svg className="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
