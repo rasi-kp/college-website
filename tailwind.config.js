@@ -18,6 +18,9 @@ export default {
   ],
   theme: {
     extend: {
+      top: {
+        '48': '16.4rem',
+      },
       screens: {
         xs: '480px',
         sm: '640px',

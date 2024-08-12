@@ -18,7 +18,7 @@ function Navbar() {
 
     return (
 
-        <nav className="bg-white border-gray-200 dark:bg-gray-900">
+        <nav className="bg-white border-gray-200 dark:bg-gray-900 ">
             <div className="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto p-4">
                 <a href="/" className="flex items-center space-x-3o rtl:space-x-reverse">
                     <img src="https://flowbite.com/docs/images/logo.svg" className="h-8" alt="Flowbite Logo" />
@@ -110,7 +110,7 @@ function Navbar() {
                         <li>
                             <button
                                 onMouseEnter={() => setisMegaDepartment(true)}
-                                onMouseLeave={() => setisMegaDepartment(false)}
+                                //onMouseLeave={() => setisMegaDepartment(false)}
                                 className="flex items-center justify-center w-full py-2 px-3 font-medium text-gray-900 border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
                             >
                                 Department
@@ -124,27 +124,27 @@ function Navbar() {
                                 <div className="p-4 pb-0 text-gray-900 md:pb-4  dark:text-white">
                                     <ul className="space-y-4">
                                         <li>
-                                            <a href="#" className="flex items-center justify-start text-center text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500 group">
+                                            <a href="/civil" className="flex items-center justify-start text-center text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500 group">
                                                 Civil Engineering
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#" className="flex items-center text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500 group">
+                                            <a href="/cse" className="flex items-center text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500 group">
                                                 Computer Science and Engineering
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#" className="flex items-center text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500 group">
+                                            <a href="/datascience" className="flex items-center text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500 group">
                                                 Computer Science and Engineering (Data Science)
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#" className="flex items-center text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500 group">
+                                            <a href="/electronics" className="flex items-center text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500 group">
                                                 Electronics and Communication Engineering
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#" className="flex items-center text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500 group">
+                                            <a href="/mechanical" className="flex items-center text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500 group">
                                                 Mechanical Engineering
                                             </a>
                                         </li>
@@ -300,7 +300,7 @@ function Navbar() {
                                         </li>
                                         <li>
                                             <a href="#" className="flex items-center text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500 group">
-                                                Hostal
+                                                Hostel
                                             </a>
                                         </li>
                                     </ul>
