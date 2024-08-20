@@ -19,11 +19,16 @@ export default {
   theme: {
     extend: {
       screens: {
+        xs: '480px',
         sm: '640px',
         md: '768px',
         lg: '1024px',
         xl: '1280px',
         '2xl': '1536px',
+      },
+      lineHeight: {
+        'extra-loose': '1.75', // Custom line height
+        'double': '2',         // Double line height for reference
       },
       colors: {
         primary: '#1E3A8A', // Example primary color
@@ -36,6 +41,7 @@ export default {
       fontFamily: {
         sans: ['Inter', 'sans-serif'], // Example custom font family
         serif: ['Merriweather', 'serif'],
+        quicksand: ['Quicksand', 'sans-serif'],
       },
       spacing: {
         '128': '32rem', // Custom spacing
