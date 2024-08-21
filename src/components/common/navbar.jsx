@@ -25,9 +25,9 @@ const Nav = () => {
 
     return (
         <div className='shadow-lg w-full fixed top-0 left-0'>
-            <div className='lg:flex bg-white py-4 lg:px-10 px-7 items-center justify-between'>
-                <div className='font-bold text-2xl cursor-pointer flex items-center font-[Popins] text-gray-800'>
-                    <span className='text-3xl text-indigo-600 mr-1 pt-2'>
+            <div className='lg:flex  bg-white py-4 lg:px-10 px-7 items-center justify-between'>
+                <div className='  font-bold text-2xl cursor-pointer flex items-center font-[Popins] text-gray-800'>
+                    <span className='text-3xl text-indigo-600  mr-1 pt-2'>
                         <ion-icon name="logo-ionic"></ion-icon>
                     </span>
                     STM
@@ -39,7 +39,7 @@ const Nav = () => {
                     {Links.map((Link) => (
                         <li
                             key={Link.name}
-                            className='lg:mr-9 text-lg lg:my-0 my-7 flex items-center border border-transparent hover:bg-indigo-600 rounded font-bold p-1 duration-500 relative pr-2'
+                            className='  lg:mr-6 pr-1 text-base lg:my-0 my-7 flex items-center border border-transparent hover:bg-indigo-600 rounded font-bold p-1 duration-500 relative '
                             onMouseEnter={() => Link.subMenu && setDropdownOpen(Link.name)}
                             onMouseLeave={() => Link.subMenu && setDropdownOpen(false)}
                         >
